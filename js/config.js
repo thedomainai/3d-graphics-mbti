@@ -25,12 +25,12 @@ export const CONFIG = {
         table: {
             columnSpacing: 200,
             rowSpacing: 500,
-            offsetX: -700,   // Center offset for 8 columns
-            offsetY: 750     // Vertical offset
+            offsetX: -900,   // Center offset for 8 columns
+            offsetY: 900     // Vertical offset
         },
         // Sphere layout
         sphere: {
-            radius: 800
+            radius: 704
         },
         // Helix layout
         helix: {
