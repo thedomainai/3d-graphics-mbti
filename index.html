@@ -1,0 +1,95 @@
+<!DOCTYPE html>
+<html lang="ja">
+<head>
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, user-scalable=no, minimum-scale=1.0, maximum-scale=1.0">
+    <title>16 Personalities - 3D Visualization</title>
+    <meta name="description" content="Interactive 3D visualization of 16 personality types with compatibility analysis">
+    
+    <!-- Fonts -->
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Inter:wght@300;400;500;600&display=swap" rel="stylesheet">
+    
+    <!-- Styles -->
+    <link rel="stylesheet" href="css/styles.css">
+</head>
+<body>
+    <!-- Header -->
+    <div id="info">
+        <span class="title">16 Personalities</span>
+        <span class="desc">Click on a personality to see compatibility</span>
+    </div>
+
+    <!-- 3D Container -->
+    <div id="container"></div>
+
+    <!-- Compatibility Panel -->
+    <div id="compatibility-panel">
+        <button id="close-panel">✕</button>
+        <h3>COMPATIBILITY</h3>
+        <div class="panel-header">
+            <span class="icon" id="panel-icon">🧠</span>
+            <div class="info">
+                <div class="type" id="panel-type">INTJ-A</div>
+                <div class="name" id="panel-name">Architect</div>
+            </div>
+        </div>
+        
+        <div class="compat-section">
+            <h4 class="work">💼 Work Compatibility</h4>
+            <div id="work-compat"></div>
+        </div>
+        
+        <div class="compat-section">
+            <h4 class="love">💕 Love Compatibility</h4>
+            <div id="love-compat"></div>
+        </div>
+    </div>
+
+    <!-- SVG for compatibility lines -->
+    <svg id="lines-svg"></svg>
+
+    <!-- Menu -->
+    <div id="menu">
+        <div class="menu-group">
+            <button id="table" class="layout-btn active" data-label="テーブル">
+                <span class="btn-icon">⊞</span>
+                <span class="btn-text">テーブル</span>
+            </button>
+            <button id="sphere" class="layout-btn" data-label="球体">
+                <span class="btn-icon">◯</span>
+                <span class="btn-text">球体</span>
+            </button>
+            <button id="helix" class="layout-btn" data-label="らせん">
+                <span class="btn-icon">🧬</span>
+                <span class="btn-text">らせん</span>
+            </button>
+            <button id="grid" class="layout-btn" data-label="グリッド">
+                <span class="btn-icon">▦</span>
+                <span class="btn-text">グリッド</span>
+            </button>
+        </div>
+        
+        <div class="menu-divider"></div>
+        
+        <button id="toggle-lines" class="toggle-btn">
+            <div class="toggle-track">
+                <div class="toggle-thumb"></div>
+            </div>
+            <span class="toggle-label">相性ライン</span>
+        </button>
+    </div>
+
+    <!-- Three.js and Application Scripts -->
+    <script type="importmap">
+        {
+            "imports": {
+                "three": "https://cdn.jsdelivr.net/npm/three@0.160.0/build/three.module.js",
+                "three/addons/": "https://cdn.jsdelivr.net/npm/three@0.160.0/examples/jsm/"
+            }
+        }
+    </script>
+    <script type="module" src="js/app.js"></script>
+</body>
+</html>
