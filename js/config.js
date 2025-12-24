@@ -10,8 +10,8 @@ export const CONFIG = {
         near: 1,
         far: 20000,
         initialZ: 4000,      // Adjusted: closer initial view
-        minDistance: 800,    // Adjusted: minimum zoom distance
-        maxDistance: 6000    // Adjusted: maximum zoom distance (was too far)
+        minDistance: 100,    // Adjusted: minimum zoom distance
+        maxDistance: 8000    // Adjusted: maximum zoom distance (was too far)
     },
 
     // Animation settings
@@ -26,7 +26,7 @@ export const CONFIG = {
             columnSpacing: 200,
             rowSpacing: 500,
             offsetX: -900,   // Center offset for 8 columns
-            offsetY: 900     // Vertical offset
+            offsetY: 1250     // Vertical offset
         },
         // Sphere layout
         sphere: {

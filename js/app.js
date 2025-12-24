@@ -491,6 +491,7 @@ function animate() {
     animationTime += 0.016;
     TWEEN.update();
     controls.update();
+    render();
 }
 
 function render() {
