@@ -30,7 +30,7 @@ export const CONFIG = {
         },
         // Sphere layout
         sphere: {
-            radius: 920
+            radius: 800
         },
         // Helix layout
         helix: {
